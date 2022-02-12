@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(8, 8, 8);
+  color: white;
+}
+.topLeft {
+  display: flex;
+  justify-content: flex-start;
+}
+.topRight {
+  display: flex;
+}
+.top img {
+  height: 40px;
+}
+.top p {
+  font-size: 16px;
+}
+
+.call {
+  display: flex;
+  align-items: center;
+}
+
+.dropbtn {
+  text-decoration: none;
+  color: black;
+}
+.dropbtn:hover {
+  color: green;
+}
+
+.navRight1 {
+  position: relative;
+  display: inline-block;
+  padding: 16px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a {
+  text-decoration: none;
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+.navRight1:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  color: green;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  height: 12vh;
+  /* background-color: green;
+  position: fixed;
+ Вот тут я хотела чтобы была видна только полосочка верхних ссылок
+} */
+}
+
+.nav img {
+  height: 100%;
+}
+.navLeft {
+  padding: 16px;
+}
+
+.parallax {
+  display: flex;
+  position: relative;
+  background: url("https://www.firestock.ru/wp-content/uploads/2013/09/depositphotos_6638221_l.jpg")
+    center no-repeat;
+  background-size: cover;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+.mask {
+  background-color: black;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.parallax h1 {
+  font-size: 70px;
+  z-index: 2;
+  color: white;
+  margin: 30px;
+}
+.parallax span {
+  font-size: 20px;
+  z-index: 2;
+  color: white;
+  margin: 30px;
+}
+.parallax a {
+  z-index: 2;
+  border: 2 px solid green;
+  background-color: green;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 20px;
+}
+.manufacture {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 60px auto;
+}
+
+.manufacture img {
+  width: 55%;
+  padding: 20px;
+}
+.manufacture a {
+  border: 2 px solid green;
+  background-color: green;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 20px;
+}
+.manufacture span {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.manufacture-content {
+  display: flex;
+  margin-left: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.manufacture h2 {
+  margin-bottom: 30px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.question img {
+  width: 10%;
+  margin-bottom: 10px;
+}
+.question h4 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+.question-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question-bottomb,
+.question-bottoma {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+.question-bottom1 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.whole {
+  width: 85%;
+  display: flex;
+  margin: 0 auto;
+}
+.salamander {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.salamander-content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: flex-start;
+}
+.salamander img {
+  width: 45%;
+  padding: 30px 0;
+}
+.salamander-content h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.salamander-content span {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.salamander-content a {
+  text-decoration: none;
+  border: 1px solid white;
+  color: black;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.scrin {
+  width: 100%;
+  padding: 40px;
+}
+
+.article {
+  display: flex;
+  justify-content: space-around;
+}
+.leftarticle,
+.rightarticle {
+  display: flex;
+  flex-direction: column;
+}
+
+.article img {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.article a {
+  text-decoration: none;
+  color: green;
+  font-size: 20px;
+}
+.article a:hover {
+  color: blue;
+}
+.article-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.907);
+  display: flex;
+  color: white;
+  justify-content: center;
+  padding: 30px;
+  font-size: 16px;
+}
+
+.footerright {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footerleft {
+  display: flex;
+  justify-content: end;
+}
+
+.footerleft1 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(145, 141, 141);
+  margin: 10px 0px;
+}
+.end {
+  background-color: rgba(0, 0, 0, 0.907);
+  color: white;
+  display: block;
+  padding: 20px 60px;
+}
+footer span {
+  line-height: 20px;
+}
+footer h3 {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+  .parallax h1 {
+    font-size: 30px;
+    margin: 20px;
+  }
+  .parallax span {
+    font-size: 18px;
+    margin: 10px;
+    text-align: center;
+  }
+  .manufacture {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    margin: 60px auto;
+  }
+  .manufacture img {
+    width: 100%;
+  }
+
+  .question-bottomb,
+  .question-bottoma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 80%;
+  }
+  .question-bottom1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .whole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .salamander img {
+    width: 80%;
+  }
+  .scrin {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerright {
+    flex-direction: row-reverse;
+  }
+  .parallax {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .top p {
+    font-size: 10px;
+  }
+  .nav img {
+    height: 30%;
+  }
+  .parallax h1 {
+    font-size: 20px;
+    margin: 30px;
+  }
+  .parallax span {
+    font-size: 10px;
+
+    margin: 10px;
+  }
+  .parallax a {
+    font-size: 14px;
+  }
+
+  .question-bottomb,
+  .question-bottoma {
+    width: 100%;
+  }
+}
